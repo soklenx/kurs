@@ -1,0 +1,66 @@
+.containers {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.photo {
+
+	float: left;
+    width: 33%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 1px ridge #d6daff;
+    box-sizing: border-box;
+}
+.photo a:hover {
+    opacity: 0.5;
+}
+.photo a {
+    display: block;
+    position: relative;
+}
+.photo a:after {
+    content: '';
+    width: 52px;
+    height: 35px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+.photo:hover> a:after {
+    visibility: visible;
+}
+.photo figcaption {
+    color: #8997ff;
+	background-color: rgba(12, 12, 12, 0.2);	
+    text-align: center;
+	font-size: 20px;
+}
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #8997ff;
+    text-align: center;
+    margin: 30px;
+}
+
+#gallery {
+    margin-bottom: 30px;
+
+}
+#gallery:after { 
+   content: '';
+   display: block; 
+   height: 0; 
+   clear: both;
+}
